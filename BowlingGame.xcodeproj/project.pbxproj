@@ -10,6 +10,8 @@
 		932D17BA203627B100ACD9F8 /* BowlingGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932D17B0203627B100ACD9F8 /* BowlingGame.framework */; };
 		932D17BF203627B100ACD9F8 /* BowlingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D17BE203627B100ACD9F8 /* BowlingGameTests.swift */; };
 		932D17C1203627B100ACD9F8 /* BowlingGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 932D17B3203627B100ACD9F8 /* BowlingGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932D17CB2036345600ACD9F8 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D17CA2036345600ACD9F8 /* Game.swift */; };
+		932D17CC203634B700ACD9F8 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932D17CA2036345600ACD9F8 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		932D17B9203627B100ACD9F8 /* BowlingGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932D17BE203627B100ACD9F8 /* BowlingGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGameTests.swift; sourceTree = "<group>"; };
 		932D17C0203627B100ACD9F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932D17CA2036345600ACD9F8 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				932D17B3203627B100ACD9F8 /* BowlingGame.h */,
+				932D17CA2036345600ACD9F8 /* Game.swift */,
 				932D17B4203627B100ACD9F8 /* Info.plist */,
 			);
 			path = BowlingGame;
@@ -148,6 +152,7 @@
 				TargetAttributes = {
 					932D17AF203627B100ACD9F8 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					932D17B8203627B100ACD9F8 = {
@@ -196,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932D17CB2036345600ACD9F8 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				932D17BF203627B100ACD9F8 /* BowlingGameTests.swift in Sources */,
+				932D17CC203634B700ACD9F8 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +341,7 @@
 		932D17C5203627B100ACD9F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bryannorden.BowlingGame;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +364,7 @@
 		932D17C6203627B100ACD9F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +386,7 @@
 		932D17C8203627B100ACD9F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KY85PLMKC9;
 				INFOPLIST_FILE = BowlingGameTests/Info.plist;
@@ -390,6 +401,7 @@
 		932D17C9203627B100ACD9F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KY85PLMKC9;
 				INFOPLIST_FILE = BowlingGameTests/Info.plist;
